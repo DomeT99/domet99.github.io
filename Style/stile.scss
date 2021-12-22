@@ -12,7 +12,7 @@
 .f-15 {
     font-size: 1.5em;
 }
-.f-13{
+.f-13 {
     font-size: 1.3em;
 }
 .f-11 {
@@ -27,26 +27,29 @@
     display: flex !important;
     flex-direction: row-reverse !important;
 }
+.d-none {
+    display: none !important;
+}
 //DARK MODE
 .dark-mode {
     background-color: #000 !important;
     color: #fff !important;
     transition: ease-in-out 0.7s;
 }
-.white-color{
+.white-color {
     color: #fff !important;
 }
 body {
-    transition: ease-in-out 0.7s;
+    transition: all 0.7s;
 }
 //BUTTON
-.btn-navbar{
+.btn-navbar {
     border: none;
     border-radius: 5px;
     background-color: transparent;
     transition: all 0.8s;
     border-bottom: 2px solid rgb(211, 116, 0);
-    &:hover{
+    &:hover {
         background: var(--orange-color);
     }
 }
@@ -85,5 +88,13 @@ body {
     background: var(--orange-color);
 }
 .move-switch {
-    transform: translateX(25px);
+    transform: translateX(12px);
+}
+.moon_svg {
+    transition: ease-in-out 0.5s;
+}
+.sun_svg {
+    @extend .moon_svg;
+    width: 0px;
+    padding: 6px;
 }

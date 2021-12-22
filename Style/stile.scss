@@ -1,0 +1,89 @@
+//Font
+.roboto {
+    font-family: "Roboto", sans-serif !important;
+}
+.varela {
+    font-family: "Varela Round", sans-serif !important;
+}
+//Font-size
+.f-35 {
+    font-size: 3.5em;
+}
+.f-15 {
+    font-size: 1.5em;
+}
+.f-13{
+    font-size: 1.3em;
+}
+.f-11 {
+    font-size: 1.1em;
+}
+//Font style
+.f-bold {
+    font-weight: bold;
+}
+//Display
+.row-rev {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+}
+//DARK MODE
+.dark-mode {
+    background-color: #000 !important;
+    color: #fff !important;
+    transition: ease-in-out 0.7s;
+}
+.white-color{
+    color: #fff !important;
+}
+body {
+    transition: ease-in-out 0.7s;
+}
+//BUTTON
+.btn-navbar{
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.8s;
+    border-bottom: 2px solid rgb(211, 116, 0);
+    &:hover{
+        background: var(--orange-color);
+    }
+}
+/* Button Switch */
+:root {
+    --light-color: #fefefe;
+    --orange-color: orange;
+}
+.switch-box {
+    width: 60px;
+    height: 30px;
+    background: var(--orange-color);
+    position: absolute;
+    border: 1px solid rgb(211, 116, 0);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.switch-box-dark {
+    background: var(--light-color);
+}
+.switch {
+    width: 20px;
+    height: 20px;
+    background: var(--light-color);
+    border-radius: 50%;
+    margin: 8px;
+    cursor: pointer;
+    transition: transform 400ms;
+}
+.switch-dark {
+    background: var(--orange-color);
+}
+.move-switch {
+    transform: translateX(25px);
+}

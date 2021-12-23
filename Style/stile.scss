@@ -30,6 +30,13 @@
 .d-none {
     display: none !important;
 }
+//Margin
+.m-left-10 {
+    margin-left: 10px;
+}
+.m-right-10 {
+    margin-right: 10px;
+}
 //DARK MODE
 .dark-mode {
     background-color: #000 !important;
@@ -49,9 +56,11 @@ body {
     background-color: transparent;
     transition: all 0.8s;
     border-bottom: 2px solid rgb(211, 116, 0);
-    &:hover {
-        background: var(--orange-color);
-    }
+    border-left: 2px solid rgb(211, 116, 0);
+    color: #000;
+    background: var(--orange-color);
+    
+    
 }
 /* Button Switch */
 :root {
